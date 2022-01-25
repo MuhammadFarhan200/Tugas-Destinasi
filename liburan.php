@@ -8,8 +8,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body style="margin-top:50px">
-    <h1 align="center">Selamat Datang</h1>
+    <h2 align="center">Selamat Datang</h2>
     <form action="" method="post">
+        <table border="1" align="center" cellpadding="3" style="border-radius:10px; padding:20px">
+
+            <style>
+
+              th, td {
+                  border:none;
+              }
+          </style>
+            <tr>
+                <th></th>
+                <th align="left">Destinasi</th>
+                <th>Harga Tiket</th>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>Bukit Bintang</td>
+                <td>Rp. 10.000</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Pantai Sadranan</td>
+                <td>Rp. 15.000</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Candi Borobudur</td>
+                <td>Rp. 50.000</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Candi Prambanan</td>
+                <td>Rp. 50.000</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Keraton Yogyakarta</td>
+                <td>Rp. 5.000</td>
+           </tr>
+            <tr>
+                <td>6.</td>
+                <td>Malioboro</td>
+                <td>Rp. 5.000</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>Pendopo Lawas</td>
+                <td> -> Cafe</td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>Goa Pindul</td>
+                <td>Rp. 100.000</td>
+            </tr>
+        </table><br>
         <table align="center" cellpadding="3">
             <tr>
                 <td>Destinasi / Harga Tiket</td>
@@ -26,17 +80,17 @@
                     <option value="8">Goa Pindul / Rp. 100.000</option>
                 </select></td>
             </tr>
-            <tr><td colspan="3"><center><input type="submit" value="  Pilih  " name="hitung"></center></td></tr>
+            <tr><td colspan="3"><center><input type="submit" value=" Pilih " name="hitung"></center></td></tr>
         </table>
         <?php
             if(isset($_POST['hitung'])){
                 $destinasi=$_POST['destinasi'];
                 if($destinasi == "1"){
         ?>
-                  <h2 align="center">Bukit Bintang</h2>
+                  <h3 align="center">Bukit Bintang</h3>
                   <table align="center" cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Bukit Bintang</td>
                     </tr>
@@ -63,10 +117,10 @@
                   </table>
     
           <?php }elseif($destinasi == "2"){ ?>
-                  <h2 align="center">Pantai Sadrana</h2>
+                  <h3 align="center">Pantai Sadrana</h3>
                   <table align="center"cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Pantai Sadrana</td>
                     </tr>
@@ -93,10 +147,10 @@
                   </table>
                     
           <?php }elseif($destinasi == "3"){ ?>
-                  <h2 align="center">Candi Borobudur</h2>
+                  <h3 align="center">Candi Borobudur</h3>
                   <table align="center" cellpadding="4"> 
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Candi Borobudur</td>
                     </tr>
@@ -123,10 +177,10 @@
                   </table>
                 
           <?php }elseif($destinasi == "4"){ ?>
-                  <h2 align="center">Candi Prambanan</h2>
+                  <h3 align="center">Candi Prambanan</h3>
                   <table align="center" cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Candi Prambanan</td>
                     </tr>
@@ -153,17 +207,17 @@
                   </table>
                  
           <?php }elseif($destinasi == "5"){ ?>
-                  <h2 align="center">Keraton Yogyakarta</h2>
+                  <h3 align="center">Keraton Yogyakarta</h3>
                   <table align="center" cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Keraton Yogyakarta</td>
                     </tr>
                     <tr>
                       <td>Harga Tiket/Orang</td>
                       <td>:</td>
-                      <td>Rp. 15.000</td>
+                      <td>Rp. 5.000</td>
                     </tr>
                     <tr>
                       <td>Jumlah Tiket</td>
@@ -183,10 +237,10 @@
                   </table>
            
           <?php }elseif($destinasi == "6"){ ?>
-                  <h2 align="center">Malioboro</h2>
+                  <h3 align="center">Malioboro</h3>
                   <table align="center" cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Malioboro</td>
                     </tr>
@@ -213,7 +267,7 @@
                   </table>
                 
          <?php }elseif($destinasi == "7"){ ?>
-                  <h2 align="center">Pendopo Lawas</h2>
+                  <h3 align="center">Pendopo Lawas</h3>
                   <table align="center" cellpadding="4" border="1" style="border-radius:5px; padding:10px">
                       <style>
                           th, td {
@@ -268,10 +322,10 @@
                      <input type="submit" name="cafe" value="Total"></center>
                   </div>
          <?php }elseif($destinasi == "8"){ ?>
-                  <h2 align="center">Goa Pindul</h2>
+                  <h3 align="center">Goa Pindul</h3>
                   <table align="center" cellpadding="4">
                     <tr>
-                      <td>Tempatr Wisata</td>
+                      <td>Tempat Wisata</td>
                       <td>:</td>
                       <td>Goa Pindul</td>
                     </tr>
